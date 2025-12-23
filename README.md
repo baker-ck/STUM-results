@@ -42,8 +42,8 @@ STUM/
 ```
 
 ### Environment
-- Python:  3.8.8
-- PyTorch: ---
+- Python == 3.10.0
+- PyTorch == 2.9.1
 - Device: MPS (Apple Silicon) 
 - Conda environment exported in `environment.yml`
 
@@ -69,6 +69,7 @@ PEMS-BAY 07
 | stum_stae  |           |          |          |
 | stum_stgcn   |           |           |           |
 | stum_stid  |           |          |          |
+
 
 
 
