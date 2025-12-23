@@ -12,27 +12,32 @@ This repository contains trained baseline models (STGCN, AGCRN, GraphWaveNet, D2
 }
 ```
 
+## Disclaimer
+We use the publicly available STUM codebase as our training framework. To ensure smooth execution, we applied minor engineering fixes (guarding optional wandb logging, correcting import paths, and fixing logging typos). No changes were made to model architectures, loss functions, or optimisation procedures. Each pretrained baseline model and enhanced model corresponds to a configuration file in baseline-configs/. and enhanced-configs/. Pretrained checkpoints are hosted externally due to size constraints.
+
 ### Repo structure
 ```
 stum-results/
 ├── README.md
-├── baseline-configs/
+├── baseline_configs/
 │   ├── acgrn.yaml
 │   ├── stgcn.yaml
 │   ├── d2stgnn.yaml
 │   ├── stae.yaml
 │   ├── stum_vanilla.yaml
 │   └── stid.yaml
-├── baseline-models/
+├── baseline_models/
 │   └── README.md   # external links to .pt files
-├── enhanced-configs/
+├── enhanced_configs/
 │   ├── stum_acgrn.yaml
 │   ├── stum_stgcn.yaml
 │   ├── stum_d2stgnn.yaml
 │   ├── stum_stae.yaml
 │   └── stum_stid.yaml
-├── enhanced-models/
+├── enhanced_models/
 │   └── README.md   # external links to .pt files
+├── stum_patches/
+│   └── non_algorithmic_fixes.diff
 └── stum_version.txt
 ```
 
@@ -66,5 +71,6 @@ stum-results/
 | STUM_STID  |           |          |          |
 | STUM_STAEformer  |           |          |          |
 | STUM_D2STGNN  |           |          |          |
+
 
 
